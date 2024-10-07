@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya - Blog Pribadi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling tambahan untuk halaman Tentang */
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .about-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .skills-list li i {
+            color: #0056b3;
+            margin-right: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 50px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Blog Pribadi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Tentang.html">Tentang Saya <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Kontak.html">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4 text-center">
+                <img src="kenzz.jpeg" alt="Foto Profil" class="profile-img">
+                <h3>Muhammad Alfa Kenza</h3>
+                <p><em>Web Developer & Enthusiast</em></p>
+            </div>
+            <div class="col-md-8">
+                <h2>Tentang Saya</h2>
+                <p class="about-text">
+                    Halo! Nama saya Muhammad Alfa Kenza, seorang pengembang web yang sangat antusias dengan teknologi. Saya telah belajar berbagai bahasa pemrograman seperti HTML, CSS, JavaScript, dan juga menguasai framework seperti Bootstrap. Saya tertarik dalam pengembangan aplikasi web yang interaktif dan responsif.
+                </p>
+                <p class="about-text">
+                    Saya juga memiliki ketertarikan pada dunia keamanan siber, dan saat ini sedang mendalami topik tersebut. Selain itu, saya senang belajar hal-hal baru dan terus mengembangkan kemampuan saya untuk menjadi lebih baik di bidang teknologi.
+                </p>
+                <h3>Keahlian</h3>
+                <ul class="skills-list">
+                    <li><i class="fas fa-code"></i>HTML, CSS, JavaScript</li>
+                    <li><i class="fas fa-cubes"></i>Bootstrap, Responsive Design</li>
+                    <li><i class="fas fa-lock"></i>Cyber Security</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer Section -->
+     <footer class="footer bg-dark text-white">
+        <p>&copy;  2024 Blog Pribadi. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

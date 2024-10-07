@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Website dengan Desain Responsif - Blog Pribadi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling tambahan untuk halaman artikel */
+        .article-header {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .article-content {
+            margin-top: 30px;
+            line-height: 1.8;
+        }
+        .article-content h2 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+        .article-content ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .back-btn {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 50px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Blog Pribadi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Tentang.html">Tentang Saya</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Blog.html">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Kontak.html">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Artikel Membuat Website dengan Desain Responsif -->
+    <div class="container">
+        <div class="article-header">
+            <h1>Membuat Website dengan Desain Responsif</h1>
+            <p><small>Dipublikasikan pada 5 Oktober 2024</small></p>
+        </div>
+        
+        <div class="article-content">
+            <p>
+                Desain responsif adalah pendekatan dalam web design yang memungkinkan tampilan website menyesuaikan diri dengan berbagai ukuran layar, mulai dari desktop hingga smartphone. Artikel ini akan membahas langkah-langkah untuk membuat website dengan desain responsif.
+            </p>
+
+            <h2>1. Pahami Konsep Desain Responsif</h2>
+            <p>
+                Desain responsif bertujuan untuk memberikan pengalaman pengguna yang optimal tanpa mengorbankan konten. Website yang responsif akan secara otomatis menyesuaikan layout, gambar, dan elemen lainnya agar sesuai dengan ukuran layar pengguna.
+            </p>
+
+            <h2>2. Gunakan Grid Sistem</h2>
+            <p>
+                Salah satu cara untuk membuat desain responsif adalah dengan menggunakan grid sistem. Grid sistem membantu dalam menyusun elemen-elemen website secara teratur. Framework seperti Bootstrap menyediakan grid sistem yang memudahkan dalam pengaturan layout.
+            </p>
+            <ul>
+                <li><strong>Contoh Bootstrap:</strong> Menggunakan kelas kolom seperti <code>.col-</code> untuk membuat kolom yang responsif.</li>
+            </ul>
+
+            <h2>3. Media Queries</h2>
+            <p>
+                Media queries adalah teknik CSS yang memungkinkan pengembang untuk menerapkan gaya yang berbeda berdasarkan ukuran layar. Contohnya:
+            </p>
+            <pre><code>@media (max-width: 768px) {
+                body {
+                    background-color: lightblue;
+                }
+            }</code></pre>
+            <p>
+                Kode di atas akan mengubah warna latar belakang menjadi biru muda saat lebar layar kurang dari 768px.
+            </p>
+
+            <h2>4. Gambar Responsif</h2>
+            <p>
+                Gambar harus ditampilkan dengan ukuran yang sesuai pada berbagai perangkat. Gunakan atribut <code>max-width: 100%</code> untuk memastikan gambar tidak melampaui lebar kontainer. Contoh:
+            </p>
+            <pre><code>img {
+                max-width: 100%;
+                height: auto;
+            }</code></pre>
+
+            <h2>5. Pilih Font yang Mudah Dibaca</h2>
+            <p>
+                Pilih font yang mudah dibaca di berbagai ukuran layar. Gunakan ukuran font yang fleksibel, seperti menggunakan satuan <code>em</code> atau <code>rem</code>, sehingga font dapat menyesuaikan dengan ukuran layar.
+            </p>
+
+            <h2>6. Uji Coba di Berbagai Perangkat</h2>
+            <p>
+                Setelah selesai membuat desain responsif, penting untuk menguji website di berbagai perangkat dan ukuran layar. Gunakan alat pengujian seperti Google Chrome Developer Tools untuk melihat bagaimana website tampil pada berbagai perangkat.
+            </p>
+
+            <h2>7. Optimalkan Kecepatan Website</h2>
+            <p>
+                Pastikan website tetap cepat dan responsif dengan mengoptimalkan ukuran gambar, mengurangi file CSS dan JavaScript yang tidak perlu, serta memanfaatkan caching.
+            </p>
+
+            <h2>8. Gunakan Framework atau Library</h2>
+            <p>
+                Menggunakan framework atau library seperti Bootstrap, Foundation, atau Tailwind CSS dapat mempercepat proses pengembangan desain responsif. Framework ini telah menyediakan komponen dan sistem grid yang responsif.
+            </p>
+
+            <p>
+                Membuat website dengan desain responsif adalah langkah penting untuk memastikan pengalaman pengguna yang baik. Dengan mengikuti langkah-langkah di atas, kamu dapat menciptakan website yang menarik dan fungsional di berbagai perangkat.
+            </p>
+        </div>
+
+        <div class="back-btn">
+            <a href="Blog.html" class="btn btn-primary">Kembali ke Blog</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+<footer class="footer bg-dark text-white">
+    <p>&copy;  2024 Blog Pribadi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

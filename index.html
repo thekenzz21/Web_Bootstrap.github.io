@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pribadi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling tambahan untuk mempercantik tampilan */
+        .navbar {
+            background-color: #1100ff; /* Warna biru */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .jumbotron {
+            background: url('https://img.freepik.com/free-vector/flat-twitch-banner-template-camping-adventure_23-2150492638.jpg?t=st=1728174044~exp=1728177644~hmac=4a7c1657ba6fbe3b9ec25b9eadd3865a8c132d9cd1e5691ef8effd4073d6b423&w=826') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            height: 400px;
+            display: flex;
+            align-items: center;
+        }
+        .jumbotron h1 {
+            font-size: 3rem;
+        }
+        .jumbotron p {
+            font-size: 1.5rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 50px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #0056b3;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #003f7f;
+        }
+        .container h2 {
+            margin-top: 30px;
+        }
+        .nav-item .active {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+        <!-- Header Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="#">Blog Pribadi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Tentang.html">Tentang Saya </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Blog.html">Blog </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontak.html"> Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+
+    <!-- Hero Section -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4">Selamat Datang di Blog Pribadi Saya!</h1>
+            <p class="lead">Explore my thoughts and experiences.</p>
+            <a href="Blog.html" class="btn btn-primary btn-lg">Mulai Membaca</a>
+        </div>
+    </div>
+
+
+<!-- Content Section -->
+<div id="content" class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Blog Post 1: Teknologi Masa Depan</h2>
+            <p>Teknologi berkembang pesat, mulai dari kecerdasan buatan, Internet of Things (IoT), hingga blockchain. Setiap inovasi membawa perubahan besar pada cara kita hidup, bekerja, dan berinteraksi. Apakah kamu siap menghadapi dunia yang semakin terhubung dan otomatis? Mari kita telusuri lebih dalam bagaimana teknologi akan membentuk masa depan kita.</p>
+            <a href="teknologi.html" class="btn btn-primary">Baca Selengkapnya</a>
+
+            <hr>
+
+            <h2>Blog Post 2: Petualangan di Alam Liar</h2>
+            <p>Berada di alam bebas memberi kita ketenangan dan rasa damai. Kali ini, saya ingin berbagi pengalaman petualangan saya di hutan Kalimantan. Dari hutan yang lebat hingga sungai yang mengalir deras, setiap sudut alam memiliki cerita tersendiri. Yuk, ikut perjalanan saya menjelajah keajaiban alam yang belum banyak diketahui orang.</p>
+            <a href="alam.html" class="btn btn-primary">Baca Selengkapnya</a>
+
+            <hr>
+
+            <h2>Blog Post 3: Tips Hidup Sehat di Era Digital</h2>
+            <p>Kesehatan adalah aset yang paling berharga, namun di era digital ini, banyak dari kita mengabaikan kesehatan fisik dan mental karena gaya hidup yang sibuk. Dalam blog post ini, saya akan berbagi tips sederhana untuk menjaga kesehatan di tengah tekanan hidup modern. Mulai dari pola makan sehat hingga meditasi, semuanya bisa kamu terapkan dengan mudah.</p>
+            <a href="tips.html" class="btn btn-primary">Baca Selengkapnya</a>
+        </div>
+    </div> 
+</div>
+
+   
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white">
+        <p>&copy;  2024 Blog Pribadi. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
